@@ -91,7 +91,7 @@ packages-aur:
 	${SCRIPT_DIR}/mkpackage --repo aur dnsmasq-git
 	${SCRIPT_DIR}/mkpackage --repo aur libglibutil
 	${SCRIPT_DIR}/mkpackage --repo aur libgbinder
-	${SCRIPT_DIR}/mkpackage --repo aur python-gbinder
+	# ${SCRIPT_DIR}/mkpackage --repo aur python-gbinder
 	${SCRIPT_DIR}/mkpackage --repo local waydroid
 	### Xbox Xone driver
 	${SCRIPT_DIR}/mkpackage --repo aur xone-dongle-firmware
@@ -111,7 +111,7 @@ mirrors-sync:
 
 .PHONY: release
 
-release: 
+release:
 	git merge ${UPSTREAM_REPO}/main
 	${SCRIPT_DIR}/sync check
 	git tag ${RELEASE_TAG}
