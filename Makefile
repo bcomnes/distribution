@@ -84,6 +84,7 @@ packages-local:
 	${SCRIPT_DIR}/mkpackage --repo local ryzenadj
 	${SCRIPT_DIR}/mkpackage --repo local pikaur
 	${SCRIPT_DIR}/mkpackage --repo local grafana-alloy
+	${SCRIPT_DIR}/mkpackage --repo local python-gbinder
 
 packages-aur:
 	${SCRIPT_DIR}/mkpackage --repo aur wlr-randr
